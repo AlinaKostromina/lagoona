@@ -1,0 +1,685 @@
+:root {
+    --bgColor1: #E5E5E5;
+    --textColor1: black;
+    --textColor2: white;
+    --textColor3: rgba(153, 153, 153, 1);
+    --textColor4: rgba(204, 153, 51, 1);
+    --textColor5: rgba(102, 102, 102, 1);
+}
+
+@font-face {
+    font-family: 'MULLER'; /* свое имя*/
+    src: local('MullerRegular'), /* название шрифта+начертание */
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal; /* лучше указывать */
+    font-display: swap; /* обязательный */
+}
+
+@font-face {
+    font-family: 'MULLER'; /* свое имя*/
+    src: local('MullerBold'), /* название шрифта+начертание */
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal; /* лучше указывать */
+    font-display: swap; /* обязательный */
+}
+
+@font-face {
+    font-family: 'MULLER'; /* свое имя*/
+    src: local('MullerMedium'), /* название шрифта+начертание */
+        url('../fonts/MullerMedium.woff') format('woff'),
+        url('../fonts/MullerMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal; /* лучше указывать */
+    font-display: swap; /* обязательный */
+}
+
+* {
+    /* Обнуление */
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--bgColor1);
+    font-family: 'MULLER', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding-top: 30px; 
+    margin-bottom: 70px;
+}
+
+.main {
+    margin-bottom: 23px;
+}
+
+.footer {
+    margin-bottom: 30px;
+}
+
+.first-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    padding-right: 40px;
+}
+
+.tel {
+    font-family: 'MULLER';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--textColor5);
+    padding-right: 541px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-text {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor4); 
+}
+
+.second-header {
+    max-height: 70px;
+    background-color: var(--textColor2); 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 27px 45px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor5); 
+    gap: 45px;
+    margin-right: 114px;
+}
+
+.btn1, .btn2 {
+    text-align: center;
+    padding: 13px 20px;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor4); 
+    border-radius: 10px;
+    border: 1px solid var(--textColor4);
+    height: 42px;
+}
+
+.btn1 {
+    margin-right: 40px;
+}
+
+.title {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 40px;
+    color: #333333; 
+    padding-left: 42px;
+    margin-bottom: 20px;
+}
+
+.special .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.offers {
+    display: flex;
+    min-height: 540px;  
+    gap: 24px;
+}
+
+.small-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.small-offer-one {
+    min-height: 258px;
+    max-width: 573px;
+    background-image: url(../img/shadow.svg), url(../img/special\ one.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 108px 40px 45px;
+}
+
+.offer-name {
+    font-family: 'MULLER';
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--textColor2);
+    margin-bottom: 15px;
+}
+
+.offer-price {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--textColor3);
+    margin-bottom: 47px;
+}
+
+.offer-details a{
+    display: flex;  
+    align-items: center;
+    gap: 7px;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: #F0BF5F;
+}
+
+.small-offer-two {
+    min-height: 258px;
+    max-width: 573px;
+    background-image: url(../img/shadow.svg), url(../img/special\ two.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 108px 40px 45px;
+}
+
+.big-offer {
+    min-height: 540px;
+    max-width: 573px;
+    background-image: url(../img/special\ three.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 212px 229px 40px 45px;
+}
+
+.about {
+    margin-bottom: 99px;
+}
+
+.about-text {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    max-width: 888px;
+    line-height: 200%;
+}
+
+.services {
+    margin-bottom: 41px;
+}
+
+.services-info {
+    display: flex;
+    max-width: 1170px;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.service-text {
+    max-width: 573px;
+    min-height: 165px;
+    background-color: var(--textColor2);
+    margin: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 26px 126px 35px 45px;
+}
+
+.service-text a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.service-title {
+    font-family: 'MULLER';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--textColor4);
+    margin-bottom: 10px;
+}
+
+.service-subtitle {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    max-width: 402px;
+    line-height: 32px;
+}
+
+.advantages {
+    margin-bottom: 70px;
+}
+
+.advantages-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.advantage {
+    max-width: 276px;
+    min-height: 276px;
+    background-color: var(--textColor2);
+    border-radius: 15px;
+    padding: 40px 42px 32px 45px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.advantage-img {
+    width: 64px;
+    height: 66px;
+    margin-bottom: 10px;
+}
+
+.advantage-text {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    line-height: 32px;
+}
+
+.location {
+    margin-bottom: 70px;
+}
+
+.location .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.location-data {
+    max-width: 374px;
+    min-height: 223px;
+    background-color: var(--textColor2);
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    gap: 36px;
+}
+
+.location-variants {
+    display: flex;
+    max-width: 1170px;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.location-variant {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-left: 45px;
+}
+
+.night {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    margin-bottom: 16px;
+}
+
+.start {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor3);
+}
+
+.price {
+    font-family: 'MULLER';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--textColor1);
+}
+
+.place {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    margin-bottom: 16px;
+}
+
+.country {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor3);
+    margin-bottom: 20px;
+}
+
+.location-btn {
+    border-radius: 10px;
+    padding: 13px 20px;
+    color: var(--textColor4);
+    border: 1px solid var(--textColor4);
+    max-width: 100px;
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+    padding-top: 35px;
+    padding-right: 45px;
+}
+
+.stars img {
+    width: 14px;
+    height: 14px;
+}
+
+.all {
+    background-image: url(../img/Group\ 37.svg);
+    background-repeat: no-repeat;
+    width: 374px;
+    height: 440px;
+    display: flex;    
+    position: relative;
+}
+
+.show-all {
+    font-family: 'MULLER';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--textColor2);
+    position: absolute;
+    top: 373px;
+    left: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.tour .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #E9E9E9;
+    border-radius: 15px;
+    padding: 45px 40px;
+    margin-bottom: 70px;
+}
+
+.tour .title {
+    padding-left: 0;
+}
+
+.tour-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 31px 0;
+    background-color: var(--textColor2);
+    border-radius: 15px;
+}
+
+.info {
+    display: block;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--textColor1);
+    margin-bottom: 15px; 
+}
+
+#trip {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+}
+
+.fourth, .fifth {
+    min-width: 121px;
+}
+
+.nights input {
+    min-width: 121px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.persons input {
+    min-width: 121px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.tour-btn {
+    border-radius: 10px;
+    padding: 13px 30px;
+    color: var(--textColor4);
+    border: 1px solid var(--textColor4);
+    max-width: 108px;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contacts .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.contacts-data {
+    background-color: var(--textColor2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 59px;
+    padding: 28px 59px 62px 31px;
+    width: 100%;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    /*спросить*/ 
+    min-width: 375px;
+    max-width: 375px;
+}
+
+.address, .contacts-tel, .email, .timetable {  
+    display: flex; 
+    padding-top: 25px;
+    padding-bottom: 23px;   
+    border-bottom: 1px solid #E9E9E9; 
+}
+
+.contacts-title {
+    font-family: 'MULLER';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--textColor1);
+    margin-right: 47px;
+    width: 98px;
+}
+
+.address-info {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor1);
+    max-width: 219px;
+    text-align: left;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor4);
+    /*спросить*/
+    text-align: left;
+}
+
+.email-address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.write-to {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor4);
+}
+
+.email-info {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor3);
+}
+
+.timetable {
+    margin-bottom: 45px;
+}
+
+.contacts-btn {
+    border-radius: 10px;
+    padding: 27px 29.5px;
+    color: var(--textColor4);
+    border: 1px solid var(--textColor4);
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;  
+    max-width: 215px; 
+}
+
+.footer-data {
+    width: 100%;
+    display: flex;
+    background-color: #333333;
+    border-radius: 15px;
+    padding: 45px 45px;
+    background-image: url(../img/footer\ logo.svg);
+    background-repeat: no-repeat;
+    /*спросить*/
+    background-position: 739px 112px;
+}
+
+.footer-info {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    margin-right: 125px;
+}
+
+.info-main {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30.4px;
+    color: var(--textColor2);
+}
+
+.agreement {
+    font-family: 'MULLER';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--textColor4); 
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 269px;
+}
+
+.footer-contacts .phone{
+    gap: 7px;
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1025px) {
+    .container {
+        max-width: 96%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
